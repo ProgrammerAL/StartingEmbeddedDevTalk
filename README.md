@@ -7,3 +7,8 @@ This talk assumes you are using the following hardware:
 - Some elctronics basics, LEDs, resistors, etc
 
 
+## Abstract for this Talk:
+Getting started in embedded software development is still a difficult journey. Starting out with an Arduino is great, but it's less than ideal for large applications. This talk will go over the options you have when starting an embedded application and help you get a grasp on the options that are out there.
+
+
+

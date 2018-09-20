@@ -1,0 +1,27 @@
+{
+  // See https://go.microsoft.com//fwlink//?linkid=834763 for more information about this file.
+  "configurations": [
+    {
+      "name": "arm8-Release-attiny85",
+      "generator": "Ninja",
+      "configurationType": "MinSizeRel",
+      "inheritEnvironments": [ "msvc_arm" ],
+      "buildRoot": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}\\build\\${name}",
+      "installRoot": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}\\install\\${name}",
+      "cmakeCommandArgs": "-DIsBuildingAtTiny85=1 -DBuildExecutable=ON -DBuildUnitTestExecutables=Off -DCMAKE_C_COMPILER=\"C:/Program Files (x86)/Atmel/Studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/avr-gcc.exe\" -DCMAKE_CXX_COMPILER=\"C:/Program Files (x86)/Atmel/Studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/avr-g++.exe\" -DAVR_TOOLCHAIN_PATH=\"C:/Program Files (x86)/Atmel/Studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin\" -DAvrDudeConfigFile=\"C:/Program Files (x86)/Arduino/hardware/tools/avr/etc/avrdude.conf\"",
+      "buildCommandArgs": "-v",
+      "ctestCommandArgs": ""
+    },
+    {
+      "name": "arm8-Release-ArduinoPro-Atmega328-3.3v",
+      "generator": "Ninja",
+      "configurationType": "MinSizeRel",
+      "inheritEnvironments": [ "msvc_arm" ],
+      "buildRoot": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}\\build\\${name}",
+      "installRoot": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}\\install\\${name}",
+      "cmakeCommandArgs": "-DIsBuildingArduinoPro328=1 -DBuildExecutable=ON -DBuildUnitTestExecutables=Off -DCMAKE_C_COMPILER=\"C:/Program Files (x86)/Atmel/Studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/avr-gcc.exe\" -DCMAKE_CXX_COMPILER=\"C:/Program Files (x86)/Atmel/Studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/avr-g++.exe\" -DAVR_TOOLCHAIN_PATH=\"C:/Program Files (x86)/Atmel/Studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin\" -DAvrDudeConfigFile=\"C:/Program Files (x86)/Arduino/hardware/tools/avr/etc/avrdude.conf\"",
+      "buildCommandArgs": "-v",
+      "ctestCommandArgs": ""
+    }
+  ]
+}

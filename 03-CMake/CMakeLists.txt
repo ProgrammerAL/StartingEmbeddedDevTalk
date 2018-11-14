@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.11)
 
-option(BuildUnitTestExecutables "Build executables for unit tests" ON)
+option(BuildUnitTestExecutable "Build executables for unit tests" ON)
 
 #Note: It's important to set the system to Generic to allow cross-compile
 set(CMAKE_SYSTEM_NAME Generic)

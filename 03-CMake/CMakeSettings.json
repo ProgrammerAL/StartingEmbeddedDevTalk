@@ -8,7 +8,7 @@
       "inheritEnvironments": [ "msvc_x86" ],
       "buildRoot": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}\\build\\${name}",
       "installRoot": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}\\install\\${name}",
-      "cmakeCommandArgs": "-DGTEST_USE_OWN_TR1_TUPLE=0 -DBuildUnitTestExecutables=ON",
+      "cmakeCommandArgs": "-DGTEST_USE_OWN_TR1_TUPLE=0 -DBuildUnitTestExecutable=ON",
       "buildCommandArgs": "-v:normal",
       "ctestCommandArgs": "--output-on-failure"
     },
@@ -19,7 +19,7 @@
       "inheritEnvironments": [ "msvc_arm" ],
       "buildRoot": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}\\build\\${name}",
       "installRoot": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}\\install\\${name}",
-      "cmakeCommandArgs": "-DIsBuildingArduinoPro328=1 -DBuildUnitTestExecutables=Off -DCMAKE_C_COMPILER=\"C:/Program Files (x86)/Atmel/Studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/avr-gcc.exe\" -DCMAKE_CXX_COMPILER=\"C:/Program Files (x86)/Atmel/Studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/avr-g++.exe\" -DAVR_TOOLCHAIN_PATH=\"C:/Program Files (x86)/Atmel/Studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin\" -DAvrDudeConfigFile=\"C:/Program Files (x86)/Arduino/hardware/tools/avr/etc/avrdude.conf\" -DDeploymentPort=COM4",
+      "cmakeCommandArgs": "-DIsBuildingArduinoPro328=1 -DBuildUnitTestExecutable=Off -DCMAKE_C_COMPILER=\"C:/Program Files (x86)/Atmel/Studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/avr-gcc.exe\" -DCMAKE_CXX_COMPILER=\"C:/Program Files (x86)/Atmel/Studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/avr-g++.exe\" -DAVR_TOOLCHAIN_PATH=\"C:/Program Files (x86)/Atmel/Studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin\" -DAvrDudeConfigFile=\"C:/Program Files (x86)/Arduino/hardware/tools/avr/etc/avrdude.conf\" -DDeploymentPort=COM4",
       "buildCommandArgs": "-v",
       "ctestCommandArgs": ""
     }
